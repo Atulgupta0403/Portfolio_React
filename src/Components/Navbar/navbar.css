@@ -1,6 +1,6 @@
 .nav{
     width: 100%;
-    background-color: blue;
+    background-color: #023047;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -8,8 +8,13 @@
     padding: 0px 50px ;
     color: white;
 }
-.logo{
-    background-color: red;
+
+.logo img{
+    height: 50px ;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+
 }
 
 .sections{
@@ -23,6 +28,13 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    color: aliceblue;
+
+}
+
+.sections p a{
+    color: aliceblue;
+    text-decoration: none;
 
 }
 
@@ -30,6 +42,31 @@
     width: 100%;
     height: 4px;
     background-color: red;
-    /* border: 2px solid black; */
     border-radius: 10px;
+    animation: span 0.5s linear 0s 1;
+}
+
+@keyframes span {
+    from{
+        width : 0%
+    }
+
+    to{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width : 440px) {
+    .nav{
+        width: 400px;
+        background-color: red;
+    }
+
+    .sections{
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    
 }
