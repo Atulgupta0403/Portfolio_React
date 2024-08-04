@@ -17,7 +17,7 @@ const navbar = () => {
         {/* <FontAwesomeIcon icon={faBars} /> */}
         <p onClick={()=>{setMenu("Home")}}><Link to="/">Home </Link> {menu === "Home"? <span></span>:<></>} </p>
         <p onClick={()=>{setMenu("About")}}><Link to="/about">About</Link>  {menu === "About"? <span></span>:<></>}</p>
-        <p onClick={()=>{setMenu("Project")}}><Link to="/project">Project</Link>  {menu === "Project"? <span></span>:<></>} </p>
+        <p onClick={()=>{setMenu("Project")}}><Link to="/project">Projects</Link>  {menu === "Project"? <span></span>:<></>} </p>
         <p onClick={()=>{setMenu("Contact")}}><Link to="/contact">Contact</Link>  {menu === "Contact"? <span></span>:<></>}</p>
       </div>
 
